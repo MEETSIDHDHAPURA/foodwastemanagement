@@ -7,15 +7,15 @@ import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import P1 from "../assets/P1.jpg";
+// import P1 from "../assets/P1.jpg";
 import P2 from "../assets/P2.jpg";
-import P3 from "../assets/P3.jpeg";
-import P4 from "../assets/P4.jpeg";
-import P5 from "../assets/P5.jpeg";
+import P3 from "../assets/P3.jpg";
+import P4 from "../assets/P4.jpg";
+// import P5 from "../assets/P5.jpeg";
 import chart from "../assets/chart.png";
 import Movinganimation from "./Animation";
 
-const data = [P1, P2, P3, P4, P5];
+const data = [ P2, P3, P4];
 
 const Home = () => {
   const sliderRef = React.useRef(null);
