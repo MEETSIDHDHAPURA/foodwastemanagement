@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.move-ing {
+  display: flex;
+  padding: 3rem 0;
+  overflow: hidden;
+  background: black;
+  white-space: nowrap;
+}
+.Movinglogo {
+  display: flex;
+  animation: 10s slide infinite linear;
+}
+.Movinglogo img {
+  height: 90px;
+  margin: 0px 40px;
+}
+@keyframes slide {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@media screen and (max-device-width: 1024px) {
+  .move-ing {
+    position: relative;
+    z-index: -5;
+    padding: 5rem 0 6rem 0;
+  }
+}
+
+@media screen and (max-device-width: 768px) {
+  .move-ing {
+    position: relative;
+    z-index: -5;
+    padding: 6rem 0 6rem 0;
+  }
+}
+
+#chart {
+  animation: 10s linear;
+  animation-name: image;
+}
+#cahrt-text {
+  animation: 10s linear;
+  animation-name: text;
+}
+
+@keyframes text {
+  from {
+    opacity: 0;
+    transform: translateX(-20%);
+  }
+  25% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+@keyframes text {
+  from {
+    opacity: 0;
+    transform: translateX(50%);
+  }
+  20% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
