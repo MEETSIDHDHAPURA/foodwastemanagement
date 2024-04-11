@@ -6,7 +6,6 @@ import {
   Typography,
   TextField,
 } from "@mui/material";
-import ArrowForwardIosOutlinedIcon from "@mui/icons-material/ArrowForwardIosOutlined";
 import ScreenContainer from "../../commonComponent/ScreenContainer";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
