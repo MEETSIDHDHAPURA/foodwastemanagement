@@ -11,20 +11,22 @@ import Footer from "./components/Footer";
 import Login from "./components/Login";
 import Registration from "./components/Registration";
 import Animation from "./components/Animation";
+import Gallery from "./components/Gallery";
 
 const App = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Login/>} />
+        <Route path="/Home" element={<Home />} />
         <Route path="/Navbar" element={<Navbar />} />
+        <Route path="/gallery" element={<Gallery />} />
         <Route path="/About" element={<About />} />
         <Route path="/Contact" element={<Contact />} />
         <Route path="/OurTeam" element={<OurTeam />} />
         <Route path="/Donate" element={<Donate />} />
         <Route path="/FAQs" element={<FAQs />} />
         <Route path="/Animation" element={<Animation />} />
-        <Route path="/Login" element={<Login />} />
         <Route path="/Registration" element={<Registration />} />
         <Route path="/Footer" element={<Footer />} />
       </Routes>
