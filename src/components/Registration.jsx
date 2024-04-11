@@ -101,9 +101,11 @@ const Registration = () => {
               </div>
             </div>
           </div>
+          <a href='/home'>
             <button type="submit" className="text-xs ml-[62%] my-3 px-3 py-1 mb-5 bg-[#000000e7] text-white rounded-2xl md:ml-[70%] xl:ml-[5%] md:mt-2 xl:px-[10.8rem] lg:ml-[73%] lg:text-sm xl:py-2 xl:mt-3 xl:mb-7 hover:bg-gray-800 hover:duration-500">
               Sign Up
             </button>
+            </a>
         </from>
       </div>
     </div>

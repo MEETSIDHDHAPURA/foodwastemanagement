@@ -10,6 +10,7 @@ import i6 from "../assets/food6.jpg";
 import i7 from "../assets/food7.jpg";
 import i8 from "../assets/food8.jpg";
 import i9 from "../assets/food9.jpg";
+import Footer from './Footer';
 
 const Imagelist = () => {
     const itemData = [
@@ -30,21 +31,12 @@ const Imagelist = () => {
         },
         {
           img: i6,
-        },
-        {
-          img: i7,
-        },
-        {
-          img: i8,
-        },
-        {
-          img: i9,
-        },
-        
+        }, 
       ];
       
     return (
-        <ImageList sx={{ width: "90%", height: "90%" ,margin:"10px"}}  cols={3} rowHeight={164} gap={10}>
+      <>
+        <ImageList sx={{ width: "98%", height: "100%" ,mx:"18px" ,my:"30px"}}  cols={3}  gap={20}>
         {itemData.map((item) => (
           <ImageListItem key={item.img}>
             <img
@@ -56,7 +48,10 @@ const Imagelist = () => {
           </ImageListItem>
         ))}
       </ImageList>
+      <Footer/>
+      </>
     );
+   
 }
 
 export default Imagelist;
