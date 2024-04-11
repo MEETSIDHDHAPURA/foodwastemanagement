@@ -24,6 +24,7 @@ const Contact = () => {
         color={"white"}
         alignItems={"center"}
       >
+        
         <Typography fontSize={"50px"} fontWeight={"700"}>
           Contact
         </Typography>
