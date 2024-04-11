@@ -1,5 +1,5 @@
 // "use client";
-import { Button, Typography } from "@mui/material";
+import { Button, Typography,Divider } from "@mui/material";
 import React, { useState } from "react";
 import Box from "@mui/material/Box";
 import InputLabel from "@mui/material/InputLabel";
@@ -14,7 +14,7 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 import TextField from "@mui/material/TextField";
-
+import Navbar from "./Navbar";
 const list = [
   { list: "CS" },
   { list: "IT" },
@@ -81,6 +81,30 @@ const FAQs = () => {
 
   return (
     <>
+    <Navbar />
+
+<Divider />
+<Box
+  py={"1.5rem"}
+  display={"flex"}
+  flexDirection={"column"}
+  gap={"1rem"}
+  backgroundColor={"#636285"}
+  color={"white"}
+  alignItems={"center"}
+>
+  <Typography fontSize={"50px"} fontWeight={"700"}>
+    FAQ
+  </Typography>
+  {/* <Breadcrumbs>
+    <Link fontSize={"14px"} href="/home" color={"white"} gap={"8"}>
+      Home
+    </Link>
+    <Typography fontSize={"14px"} color={"white"}>
+      Gallery
+    </Typography>
+  </Breadcrumbs> */}
+</Box>
       <Box px={"200px"}>
         <Box display={"flex"} py={"80px"} justifyContent={"space-between"}>
           <Box>
