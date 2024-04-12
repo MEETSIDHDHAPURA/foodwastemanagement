@@ -1,8 +1,8 @@
 import React from "react";
 import Logo from "../assets/OIG2.png";
-import { Box, Typography } from "@mui/material";
+import { Box, Typography,Button } from "@mui/material";
 import { Link } from "react-router-dom";
-import { FaRegHeart } from "react-icons/fa6";
+import { FavoriteBorderOutlined } from "@mui/icons-material";
 const Navbar = () => {
   return (
     <Box
@@ -29,7 +29,7 @@ const Navbar = () => {
         <Typography
           sx={{
             fontWeight: "900",
-            fontSize:"30px",
+            fontSize: "30px",
 
             color: "#31899f",
           }}
@@ -42,7 +42,7 @@ const Navbar = () => {
           display: "flex",
           gap: "20px",
           cursor: "pointer",
-          alignItems:"center"
+          alignItems: "center",
         }}
       >
         <Link to="/Home" className="text-blue-900 hover:text-orange-500">
@@ -60,14 +60,20 @@ const Navbar = () => {
         {/* <Link to="/OurTeam" className="text-blue-900 hover:text-orange-500">
           <Typography fontWeight={600}>OurTeam</Typography>
         </Link> */}
-        
+
         <Link to="/FAQs" className="text-blue-900 hover:text-orange-500">
           <Typography fontWeight={600}>FAQ</Typography>
         </Link>
-        <button  Link to="/Donate" className=" bg-orange-500 text-white px-5 py-2 rounded-full flex items-center gap-1 hover:bg-blue-900">
-        <Typography fontWeight={600}>Donate</Typography>
-        <p><FaRegHeart /></p>
-        </button>
+        <Button
+          LinkComponent={Link}
+          to="/Donate"
+          className=" bg-orange-500 text-white px-5 py-2 rounded-full flex items-center gap-1 hover:bg-blue-900"
+        >
+          <Typography fontWeight={600}>Donate</Typography>
+          <p>
+            <FavoriteBorderOutlined />
+          </p>
+        </Button>
       </Box>
       <Box
         sx={{
@@ -78,7 +84,10 @@ const Navbar = () => {
         <Link to="/" className="cursor-pointer text-blue-900 hover:text-orange-500">
           <Typography fontWeight={600}>Login</Typography>
         </Link>
-        <Link to="/Registration" className="cursor-pointerb text-blue-900 hover:text-orange-500">
+        <Link
+          to="/Registration"
+          className="cursor-pointerb text-blue-900 hover:text-orange-500"
+        >
           <Typography fontWeight={600}>Registration</Typography>
         </Link>
       </Box>

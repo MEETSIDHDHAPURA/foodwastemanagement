@@ -1,12 +1,6 @@
 import React from "react";
-import {
-  Box,
-  Button,
-  Divider,
-  Typography,
-  TextField,
-} from "@mui/material";
-import ScreenContainer from "../../commonComponent/ScreenContainer";
+import { Box, Button, Divider, Typography, TextField } from "@mui/material";
+import ScreenContainer from "../components/ScreenContainer";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 
